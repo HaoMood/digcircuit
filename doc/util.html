@@ -1,0 +1,159 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module util</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>util</strong></big></big> (version 1.0, 2017-07-25)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/hao/study/computer-science/algorithms-and-data-structures/problem-solving-with-algorithms-and-data-structures/code/digcircuit/util.py">/home/hao/study/computer-science/algorithms-and-data-structures/problem-solving-with-algorithms-and-data-structures/code/digcircuit/util.py</a></font></td></tr></table>
+    <p><tt>Common&nbsp;gates&nbsp;and&nbsp;propositional&nbsp;units&nbsp;for&nbsp;digital&nbsp;circuits.<br>
+&nbsp;<br>
+This&nbsp;file&nbsp;is&nbsp;also&nbsp;a&nbsp;demo&nbsp;of&nbsp;how&nbsp;to&nbsp;use&nbsp;the&nbsp;digcircuit&nbsp;module.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="digcircuit.html">digcircuit</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="util.html#XNorGate">XNorGate</a>
+</font></dt><dt><font face="helvetica, arial"><a href="util.html#XorGate">XorGate</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="XNorGate">class <strong>XNorGate</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>XNor&nbsp;gate&nbsp;with&nbsp;two&nbsp;inputs&nbsp;and&nbsp;one&nbsp;output.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_label&nbsp;(str):&nbsp;Name&nbsp;of&nbsp;the&nbsp;gate&nbsp;for&nbsp;identification.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_input_a&nbsp;(int&nbsp;{0,&nbsp;1}):&nbsp;One&nbsp;input&nbsp;of&nbsp;the&nbsp;gate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_input_b&nbsp;(int&nbsp;{0,&nbsp;1}):&nbsp;Another&nbsp;input&nbsp;of&nbsp;the&nbsp;gate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_gates&nbsp;(dict&nbsp;of&nbsp;(str,&nbsp;digcircuit._LogicGate)):&nbsp;All&nbsp;gates&nbsp;needed.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_connectors&nbsp;(dict&nbsp;of&nbsp;(str,&nbsp;digcircuit.Connector)):&nbsp;All&nbsp;connectors<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;needed.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;xnor_gate&nbsp;=&nbsp;<a href="#XNorGate">XNorGate</a>('xnor')<br>
+&gt;&gt;&gt;&nbsp;xnor_gate.<a href="#XNorGate-setInput">setInput</a>(1,&nbsp;1)<br>
+&gt;&gt;&gt;&nbsp;xnor_gate.<a href="#XNorGate-getOutput">getOutput</a>()<br>
+1<br>
+&gt;&gt;&gt;&nbsp;xnor_gate.<a href="#XNorGate-setInput">setInput</a>(1,&nbsp;0)<br>
+&gt;&gt;&gt;&nbsp;xnor_gate.<a href="#XNorGate-getOutput">getOutput</a>()<br>
+0<br>
+&gt;&gt;&gt;&nbsp;xnor_gate.<a href="#XNorGate-setInput">setInput</a>(0,&nbsp;1)<br>
+&gt;&gt;&gt;&nbsp;xnor_gate.<a href="#XNorGate-getOutput">getOutput</a>()<br>
+0<br>
+&gt;&gt;&gt;&nbsp;xnor_gate.<a href="#XNorGate-setInput">setInput</a>(1,&nbsp;1)<br>
+&gt;&gt;&gt;&nbsp;xnor_gate.<a href="#XNorGate-getOutput">getOutput</a>()<br>
+1<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="XNorGate-__init__"><strong>__init__</strong></a>(self, label)</dt></dl>
+
+<dl><dt><a name="XNorGate-getLabel"><strong>getLabel</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="XNorGate-getOutput"><strong>getOutput</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="XNorGate-setInput"><strong>setInput</strong></a>(self, input_a, input_b)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="XorGate">class <strong>XorGate</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Xor&nbsp;gate&nbsp;with&nbsp;two&nbsp;inputs&nbsp;and&nbsp;one&nbsp;output.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_label&nbsp;(str):&nbsp;Name&nbsp;of&nbsp;the&nbsp;gate&nbsp;for&nbsp;identification.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_input_a&nbsp;(int&nbsp;{0,&nbsp;1}):&nbsp;One&nbsp;input&nbsp;of&nbsp;the&nbsp;gate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_input_b&nbsp;(int&nbsp;{0,&nbsp;1}):&nbsp;Another&nbsp;input&nbsp;of&nbsp;the&nbsp;gate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_gates&nbsp;(dict&nbsp;of&nbsp;(str,&nbsp;digcircuit._LogicGate)):&nbsp;All&nbsp;gates&nbsp;needed.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_connectors&nbsp;(dict&nbsp;of&nbsp;(str,&nbsp;digcircuit.Connector)):&nbsp;All&nbsp;connectors<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;needed.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;xor_gate&nbsp;=&nbsp;<a href="#XorGate">XorGate</a>('xor')<br>
+&gt;&gt;&gt;&nbsp;xor_gate.<a href="#XorGate-setInput">setInput</a>(1,&nbsp;1)<br>
+&gt;&gt;&gt;&nbsp;xor_gate.<a href="#XorGate-getOutput">getOutput</a>()<br>
+0<br>
+&gt;&gt;&gt;&nbsp;xor_gate.<a href="#XorGate-setInput">setInput</a>(1,&nbsp;0)<br>
+&gt;&gt;&gt;&nbsp;xor_gate.<a href="#XorGate-getOutput">getOutput</a>()<br>
+1<br>
+&gt;&gt;&gt;&nbsp;xor_gate.<a href="#XorGate-setInput">setInput</a>(0,&nbsp;1)<br>
+&gt;&gt;&gt;&nbsp;xor_gate.<a href="#XorGate-getOutput">getOutput</a>()<br>
+1<br>
+&gt;&gt;&gt;&nbsp;xor_gate.<a href="#XorGate-setInput">setInput</a>(1,&nbsp;1)<br>
+&gt;&gt;&gt;&nbsp;xor_gate.<a href="#XorGate-getOutput">getOutput</a>()<br>
+0<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="XorGate-__init__"><strong>__init__</strong></a>(self, label)</dt></dl>
+
+<dl><dt><a name="XorGate-getLabel"><strong>getLabel</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="XorGate-getOutput"><strong>getOutput</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="XorGate-setInput"><strong>setInput</strong></a>(self, input_a, input_b)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__all__</strong> = ['XorGate', 'XNorGate']<br>
+<strong>__author__</strong> = 'Hao Zhang'<br>
+<strong>__copyright__</strong> = 'Copyright @2017'<br>
+<strong>__date__</strong> = '2017-07-25'<br>
+<strong>__email__</strong> = 'zhangh0214@gmail.com'<br>
+<strong>__license__</strong> = 'CC BY-SA 3.0'<br>
+<strong>__status__</strong> = 'Development'<br>
+<strong>__updated__</strong> = '2017-07-25'<br>
+<strong>__version__</strong> = '1.0'</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Hao&nbsp;Zhang</td></tr></table>
+</body></html>

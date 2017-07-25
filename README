@@ -1,0 +1,9 @@
+                                   digcircuit
+
+A simulation of digital circuits.
+
+The basic building blocks for this simulation are logic gates, such as and, or,
+and not. By combining these gates in various patterns and then applying a set of
+input values, we can build circuits that have logical functions.
+
+Please refer to the files in doc/ for more details of how to use the modules.
